@@ -1,16 +1,12 @@
 def fib(n):
-  a0 = 0
+  a0 = 1
   a1 = 1
-  c = 5
-  for i in range (c) :
+  n = 5
+  s = 0
+  for i in range (n):
+    while s < n
     A = a0 + a1
   print(A)
-fib(6)
-print()
-def fib(n):
-  a0 = 0
-  a1 = 1
-  if n>0:
-    B=a0+a1
-  print(B)
-fib(13)
+fib(5)
+
+

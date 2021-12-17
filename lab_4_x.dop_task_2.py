@@ -8,7 +8,7 @@ def fib(n):
     a1 = A
     i = i+1
     print(A)
-fib(2)
+fib(4)
 print()
 def fib(n):
   a0 = 0
