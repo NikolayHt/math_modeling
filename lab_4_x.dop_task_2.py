@@ -1,6 +1,6 @@
 def fib(n):
   a0 = 0
-  a1 = 1
+  a1 = 5
   i = 0
   while i < n-2:
     A = a0 + a1
@@ -9,7 +9,7 @@ def fib(n):
     i = i+1
     print(A)
 fib(2)
-
+print()
 def fib(n):
   a0 = 0
   a1 = 1
