@@ -16,7 +16,7 @@ print(my_func(b=3, a=9))
 
 
 
-def my_func(a, b=0): #на оборот а и b нельзя
+def my_func(a, b=0): #так а и b нельзя, сначала а потом b
   x = 3 * a - b
   return x 
 
@@ -29,7 +29,7 @@ print(my_func(3,4,8))
 
 
 
-def my_func(**kwrgs):
+def my_func(**kwrgs):#словарь
   x = 3 * kwrgs['obj_1'] - kwrgs['obj_2']
   return x
 

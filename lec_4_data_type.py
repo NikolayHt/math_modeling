@@ -30,14 +30,14 @@ print(z + w)
 s = 'hello'
 print(s[0])
 
-s[0] = 'H'
+#s[0] = 'H'
 
 
 #tuple
 t = (1, 4, 9)
 print(t)
 #print(t[0]) #str' object does not support item assignment
-t[0] = 3
+#t[0] = 3
 
 
 #list

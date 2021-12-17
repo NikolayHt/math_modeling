@@ -1,4 +1,4 @@
-def step(a,n):
+def task(a,n):
   if n<0:
     a = 1/a
     n = -n
@@ -7,5 +7,5 @@ def step(a,n):
     b = b * a
     n = n-1
     print(b)
-step(2,5)
-step(3,5)
+task(2,5)
+task(3,5)

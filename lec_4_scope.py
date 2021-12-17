@@ -10,5 +10,6 @@ a = 'Good'
 def my_func():
   a = 'Bad'
   print (a)
+  
 my_func()
 print(a)  
