@@ -14,3 +14,11 @@ def task(a):
 
 task(a)
 
+def tass(*args):
+  l = len(args)
+  k = 0
+  for i in range (l):
+    k = k + args[i]
+  print(k / l)
+
+tass(4, 8, 12, 16)
