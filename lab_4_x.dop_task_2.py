@@ -4,5 +4,5 @@ def fib(n):
   for i in range (n):
     k = k + l
     l = k
-  print(k)
-fib(11)        
+    print(k)
+fib(10)        
