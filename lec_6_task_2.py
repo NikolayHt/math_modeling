@@ -12,4 +12,4 @@ def graf(f,a=1,b=3,c=6,k=1,xa=-100,xb=100,N=5):
     plt.title('Гипербола')
   plt.plot(x,y)
   plt.show()
-graf(f='g')
+graf(f='p')
