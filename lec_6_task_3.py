@@ -2,22 +2,21 @@ import matplotlib.pyplot as plt
 import numpy as np
 f='Окружность(o) или эллипс(e)'
 
-def graf(f,rad=10,xa=-2,xb=2,N=0.01,a=6,b=5):
+def graf(f,rad=5,xa=-5,xb=5,N=0.01,a=3,b=4):
   x = np.arange(xa,xb,N)
   y = np.arange(xa,xb,N)
   X, Y = np.meshgrid(x,y)
 
   if f == 'o':
-   fxy = X**2 + Y**2
+    fxy = X**2 + Y**2 - rad
     plt.title('Окружность') 
-    plt.plot(x, y, color='r')
     plt.axis('equal')
   elif f == 'e':
-    fxy = X**2 / a**2 + Y**2 / b**2 - 1
+    fxy = X**2 / a**2 + Y**2 / b**2 - rad
     plt.title('Эллипс')
-  plt.contour(X,Y,fxy,levels=[0])
+    plt.axis('equal')
   plt.show()
 
-graf(f='o')
+graf(f='e')
 
 
