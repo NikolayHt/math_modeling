@@ -1,47 +1,34 @@
-
-
-
-
-
 import matplotlib.animation as animation
 import matplotlib.pyplot as plt
 import numpy as np
-f='Циклоида(z) или астроида(a)'
 
 fig, ax = plt.subplots()
-anim_object, = plt.plot([], [], '-', lw=2) # Объект анимации
-xdata, ydata = [], [] # Координаты объекта анимации
+circle, = plt.plot([], [], '-', color='g', label='circle')
 
-def graf(f,R):
-  if f == 'z':
-    t = np.arange (-2*np.pi, 2*np.pi, 0.1)
-    x = R*(t-np.sin(t))
-    y = R*(1-np.cos(t))
-  elif f == 'a':
-    t = np.arange (-2*np.pi, 2*np.pi, 0.1)
-    R1 = R/4
-    x = R1*np.cos(t)**3
-    y = R1*np.sin(t)**3
-  return x,y
-  plt.show()
+def circle_move (bet, angle_vel, time):
+    alpha = angle_vel * (np.pi/360) * time #angle_vel = амега
+    R = alpha * time
+    x = R*np.cos(bet)
+    y = R*np.sin(bet)
+    return x, y
 
-ax.set_xlim(0, 2*np.pi) # Пределы изменения переменной Х
-ax.set_ylim(-1, 1) # Пределы изменения переменной У
+edge = 40
+plt.axis('equal')
+ax.set_xlim(-edge, edge)
+ax.set_ylim(-edge, edge)
 
-def update(frame): # Функция подстановки координат в объект анимации
-    xdata.append(frame) # Рассщет координаты Х
-    ydata.append(np.sin(frame)) # Рассщет координаты У
-    anim_object.set_data(xdata, ydata) # Передача координат
-    return anim_object,
+def animate(i):
+    circle.set_data(circle_move(bet=np.linspace(0, 2*np.pi, 100), angle_vel=1, time=i))
 
-ani = FuncAnimation(fig, # Стандартный вызов пространства для анимации
-                    update, # Вызов функции подстановки координат
-                    frames=np.arange(0, 2*np.pi, 0.1),
-                    interval=100 # Интервал между кадрами,
-                    )            # по умолчанию 200 милисекунд
+ani = animation.FuncAnimation(fig,
+                              animate,
+                              frames=360,
+                              interval=30
+                              )
 
-#ani.save('lec_7_create_animation_simple.gif')
+#ani.save('lec_7_standart_animation.gif')
+plt.show()
 
-graf(f='z')
+
 
 
