@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 fig, ax = plt.subplots()
-fly, = plt.plot([], [], '-', color='y', label='fly')
+fly, = plt.plot([], [], '-', color='tan', label='fly')
 
 def babochka(time):
     alpha = np.arange(0,12*np.pi,0.1) 

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 fig, ax = plt.subplots()
-circle, = plt.plot([], [], '-', color='g', label='circle')
+circle, = plt.plot([], [], '-', color='c', label='circle')
 
 def circle_big (bet, angle_vel, time):
     alpha = angle_vel * (np.pi/360) * time #angle_vel = амега
