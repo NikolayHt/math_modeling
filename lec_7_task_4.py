@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib.animation import FuncAnimation
 
 fig,ax=plt.subplots()
-frakt,=plt.plot([],[],'*',color='y',label='Frakt')
+frakt,=plt.plot([],[],'*',color='y',label='frakt')
 
 ax.set_xlim(-0.2,0.4)
 ax.set_ylim(0,0.8)

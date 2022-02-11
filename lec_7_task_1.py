@@ -12,8 +12,8 @@ def graf(f,R):
     t = np.arange (-2*np.pi, 2*np.pi, 0.01)
     x = R*np.cos(t)**3
     y = R*np.sin(t)**3
-  plt.plot(x, y, ls='--', lw=3)
-  plt.axis('equal')
-  plt.show()
+plt.axis('equal')
+plt.plot(x, y, ls='--', lw=3
+plt.show()
 print(graf(f='a',R=3))
 
