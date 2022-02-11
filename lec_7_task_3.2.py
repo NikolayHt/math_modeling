@@ -12,7 +12,7 @@ def update(time):
     t = 0.1*time
     x = 16*np.sin(t)**3 
     y = 13*np.cos(t)-5*np.cos(2*t)-2*np.cos(3*t)-np.cos(4*t)
-    return x,y 
+   
     
     xdata.append(x)
     ydata.append(y)
@@ -26,4 +26,4 @@ ani = FuncAnimation(fig, # Стандартный вызов пространс�
                     )            # по умолчанию 200 милисекунд
 
 
-ani.save('lec_7_3.2.gif')
+plt.show()
