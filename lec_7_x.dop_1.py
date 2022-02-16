@@ -12,8 +12,8 @@ def circle_move(R):
   x0 = R * np.linspace(0, 4*np.pi, 100)
   y0 = R
   alpha = np.arange(0, 2*np.pi, 0.01)
-  x = x0 + R*np.cos(alpha)**3
-  y = y0 + R*np.sin(alpha)**3
+  x = x0 + R*np.cos(alpha)
+  y = y0 + R*np.sin(alpha)
   return x,y
 
   xdata.append(x)
