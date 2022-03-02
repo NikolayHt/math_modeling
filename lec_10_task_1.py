@@ -15,6 +15,7 @@ z0 = -3
 k0 = y0, z0
 
 sol = odeint(diff_func, k0, x)
+
 plt.plot(x, sol[:, 1], 'g', label = "y(x)")
 plt.plot(x, sol[:, 0], 'y', label = "z(x)")        
 plt.legend()
