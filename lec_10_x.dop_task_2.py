@@ -10,7 +10,7 @@ def diff_func(k, x):
   dwdx = (w ** 2 - ((3*y**2)/np.sqrt(x)))/y
   return dydx, dwdx
 
-y0 = 0.01
+y0 = 0
 w0 = 1
 k0 = y0, w0
 sol = odeint(diff_func, k0, x)
