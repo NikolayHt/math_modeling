@@ -1,5 +1,3 @@
-
-
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
@@ -14,7 +12,6 @@ def move_function(z, t):
   dydt = (m - x - y) * k2
   return dxdt, dydt
 
-u = 15
 m = 10
 k1 = 0.2
 k2 = 0.5
