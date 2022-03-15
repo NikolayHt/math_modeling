@@ -3,8 +3,8 @@ from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-frames = 100
-t = np.linspace(0, 50, frames) 
+frames = 1000
+t = np.linspace(0, 100, frames) 
 
 def move_function(z, t):
   x, u_x, y, u_y = z
