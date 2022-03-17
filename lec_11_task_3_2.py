@@ -55,5 +55,4 @@ edge = 0.8
 ax.set_xlim(-edge, edge)
 ax.set_ylim(-edge, 0)
 
-
 plt.show()
