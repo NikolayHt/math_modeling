@@ -6,7 +6,7 @@ playerBscore = 0
 
 window = t.Screen()
 window.title("PongGame")
-window.bgcolor("black")
+window.bgcolor("#91823A")
 window.setup(width = 800, height = 600)
 window.tracer(0)
 
@@ -14,8 +14,8 @@ window.tracer(0)
 leftpaddle = t.Turtle()
 leftpaddle.speed(0)
 leftpaddle.shape("square")
-leftpaddle.color("white")
-leftpaddle.shapesize(stretch_wid=4, stretch_len=1)
+leftpaddle.color("#D7EEF4")
+leftpaddle.shapesize(stretch_wid=4.4, stretch_len=0.5)
 leftpaddle.penup()
 leftpaddle.goto(-350,0)
 
@@ -23,20 +23,20 @@ leftpaddle.goto(-350,0)
 rightpaddle = t.Turtle()
 rightpaddle.speed(0)
 rightpaddle.shape("square")
-rightpaddle.color("white")
-rightpaddle.shapesize(stretch_wid=5, stretch_len=1)
+rightpaddle.color("#D7EEF4")
+rightpaddle.shapesize(stretch_wid=4.4, stretch_len=0.5)
 rightpaddle.penup()
 rightpaddle.goto(350,0)
 
 #создание мяча
 ball = t.Turtle()
-ball.speed(0)
+ball.speed(2)
 ball.shape("circle")
-ball.color("green")
+ball.color("#F0AD0D")
 ball.penup()
 ball.goto(5,5)
-ballxdirection = 0.2
-ballydirection = 0.2
+ballxdirection = 0.15
+ballydirection = 0.15
 
 #создание счета
 pen = t.Turtle()
