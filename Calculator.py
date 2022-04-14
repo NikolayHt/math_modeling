@@ -5,7 +5,7 @@ win= tk.Tk()
 win.title('CALCULATOR')   
 win.geometry(f"265x275+100+200")    
 win.resizable(False, False) 
-win.config(bg='#DCC0B7')    
+win.config(bg='#717B7F')    
 win.bind('<Key>, press_Key')
 
 count = tk.Entry(win, justify=tk.RIGHT, font=('Agency FB',15),width=15)
