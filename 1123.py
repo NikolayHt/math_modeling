@@ -9,8 +9,8 @@ import os
 # R = float(input("Радиус: "))
 # omega = float(input("Угол: "))
 
-T = 5300
-M = 0.5 * (2 * 10**30)
+T = 31000
+M = 61 * (2 * 10**30)
 R = 7e10
 omega = 10
 N = 135
