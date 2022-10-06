@@ -9,7 +9,8 @@ class Tomato:
 
   def grow(self, states):
     for i in range(states):
-      states[i] += 1
+      i += 1
+      states[i] 
       break
     return states
 
