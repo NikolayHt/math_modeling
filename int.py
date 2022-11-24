@@ -1,4 +1,3 @@
-
 class DictD(dict):
   def __init__(self, *k, **kw):
     self.__dict = dict(*k, **kw)
