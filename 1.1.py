@@ -14,7 +14,7 @@ system = StarSystem(['planet1', 'planet2', 'planet3'], 'StarSystem1')
 len(system)
 system = system + 'planet4'
 system.planets
-
+'''
 class Number1:
     def __init__ (self, val):
         self.val = val
@@ -106,3 +106,4 @@ class StarSystem:
     def __str__(self):
         return f'Название системы {self.name} \
         и её планеты {[i for i in self.planets]}'
+'''

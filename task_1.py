@@ -19,3 +19,5 @@ class StarSystem:
 system_1 = StarSystem(['planet_1'], 'System_1')
 system_1 += 'planet_2'
 system_1.planets
+
+print(system_1)
